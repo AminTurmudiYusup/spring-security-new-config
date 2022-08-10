@@ -1,5 +1,6 @@
 # spring-security-new-config
 In this Project explain, how to configure spring security with a new configuration (without WebSecurityConfigurerAdapter)
+
 #How to implement Spring Security without using the WebSecurityConfigurerAdapter
 Prerequisite
 1. You have spring boot application and imported to IntelliJ idea
