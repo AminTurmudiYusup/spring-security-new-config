@@ -1,5 +1,5 @@
 # spring-security-new-config
-In this Project explain, how to configure spring security with a new configuration (without WebSecurityConfigurerAdapter)
+ This Project explain, how to configure spring security with a new configuration (without WebSecurityConfigurerAdapter)
 
 #How to implement Spring Security without using the WebSecurityConfigurerAdapter
 Prerequisite
