@@ -1,7 +1,7 @@
 package com.example.springsecurity.services;
 
 import com.example.springsecurity.entity.Merchant;
-import com.example.springsecurity.repository.UserRepository;
+import com.example.springsecurity.repository.MerchantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -15,11 +15,11 @@ import java.util.Collections;
 public class UserService implements UserDetailsService {
 
     @Autowired
-    private UserRepository userRepository;
+    private MerchantRepository merchantRepository;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Merchant userDetails=userRepository.findByUserName(username).orElseThrow(
+        Merchant userDetails=merchantRepository.findByUserName(username).orElseThrow(
                 () -> new UsernameNotFoundException("Not Found User")
         );
 
